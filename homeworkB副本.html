@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+			.swiper-container img{
+				width: 100%;
+				height: 500px;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<img src="https://img14.360buyimg.com/da/jfs/t4663/340/4578281931/95766/12fccda7/590fc0caNab38df97.jpg"/>
+            </div>
+            <div class="swiper-slide">
+            	<img src="https://img1.360buyimg.com/da/jfs/t4552/42/4038304926/155688/82e88d91/590ada5eNf88e7dad.jpg"/>
+            </div>
+            <div class="swiper-slide">
+            	<img src="https://img1.360buyimg.com/da/jfs/t4567/179/4280240709/103086/abfaa520/590c40f5N3d8ce29f.jpg"/>
+            </div>
+            <div class="swiper-slide">
+            	<img src="https://img20.360buyimg.com/da/jfs/t5206/9/1072919392/148433/f16cf6c8/590b3999N8639c26f.jpg"/>
+            </div>
+            <div class="swiper-slide">
+            	<img src="https://img1.360buyimg.com/da/jfs/t5362/4/936352099/118348/6778ce8c/59095945N30aca2ed.jpg"/>
+            </div>
+            <div class="swiper-slide">
+            	<img src="https://img11.360buyimg.com/da/jfs/t5329/12/1057891369/172619/2164d2e7/590af2c0N82eabb90.jpg"/>
+            </div>
+            <div class="swiper-slide">
+            	<img src="https://img10.360buyimg.com/da/jfs/t4699/320/4198669737/123355/3ffc9ec2/590c25c7N41df382c.jpg"/>
+            </div>
+            <div class="swiper-slide">
+            	<img src="https://img13.360buyimg.com/da/jfs/t5137/66/1152026120/330000/7f70ca83/590c3bc5Ne6bbad55.jpg"/>
+            </div>
+    </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+  	//轮播方向: vertical垂直 horizontal水平
+    direction: 'horizontal',
+    loop: true,
+    //初始的索引页 从0开始
+    initialSlide :0,
+    //滑动开始到结束的时长 单位ms 默认300
+    speed:3000,
+    //是否自动轮播
+    autoplay:true,
+    //切换效果
+    /*cube 立方体
+     *fade 淡出
+     *coverflow 封面流转
+     *filp 翻转
+     */
+    effect:"fade",
+    //是否开启键盘左右方向键控制切换
+    keyboardControl : true,
+    //分页器样式
+    /*bullets  圆点
+     *fraction  分数形式
+     *progress  进度条
+     */
+    paginationType : 'bullets',
+    //分页器是否可以点击切换
+    paginationClickable: true,
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+    // 如果需要前进后退按钮
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    
+    // 如果需要滚动条
+    scrollbar: '.swiper-scrollbar',
+    //当切换变化开始时:
+//  onSlideChangeStart:function(swiper){
+    	    //activeIndex 当前活动页索引值
+//  	    alert(swiper.activeIndex);
+//  }
+    //当切换变化结束时:
+    onSlideChangeEnd:function(swiper){
+    	   // alert(swiper.realIndex);
+    }
+  })        
+  </script>
+	</body>
+</html>
